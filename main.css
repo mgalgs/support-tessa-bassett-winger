@@ -1,0 +1,37 @@
+.heavy-text-shadow {
+	text-shadow: 0px 2px 8px gray;
+	font-weight:bold;
+}
+.text-shadow, .letter {
+    text-shadow: 0px 2px 5px #c0c0c0;
+}
+.letter {
+    width: 80%;
+    margin: 0 auto;
+    background: #f0f0f0;
+    padding: 10px;
+}
+.shadow, .letter {
+    -moz-box-shadow:    5px 5px 20px #666;
+    -webkit-box-shadow: 5px 5px 20px #666;
+    box-shadow:         5px 5px 20px #666;
+}
+.shadow-wrapper, .letter-wrapper {
+    width: 80%;
+	margin: 0 auto;
+	background-color: rgb(102,102,102); /* Needed for IEs */
+
+	-moz-box-shadow: 5px 5px 20px rgba(102,102,102,1.0);
+	-webkit-box-shadow: 5px 20px 5px rgba(102,102,102,1.0);
+	box-shadow: 5px 5px 20px rgba(102,102,102,1.0);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+}
+.shadow-wrapper .shadow-content, .letter-wrapper .letter-content {
+    text-shadow: 0px 2px 5px #c0c0c0;
+	position: relative; /* This protects the inner element from being blurred */
+	padding: 10px;
+	background-color: #f0f0f0;
+}
